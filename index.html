@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orbit X Systems — We Make Brands Impossible to Scroll Past</title>
   <meta name="description" content="AI-powered social media management, video editing, and content creation. Strategy and execution — all under one roof." />
+  <meta property="og:title" content="Orbit X Systems — We Make Brands Impossible to Scroll Past" />
+  <meta property="og:type" content="website" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="landing.css" />
 </head>
 <body>
 
@@ -32,10 +35,10 @@
       </a>
       <ul class="nav-links">
         <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="index.html#process" class="nav-link">How It Works</a></li>
-        <li><a href="index.html#ai" class="nav-link">AI Suite</a></li>
+        <li><a href="#process" class="nav-link">How It Works</a></li>
+        <li><a href="#ai" class="nav-link">AI Suite</a></li>
         <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
         <li><a href="contact.html" class="nav-link nav-cta">Get Started</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -48,97 +51,105 @@
     <button class="mobile-close" id="mobileClose">✕</button>
     <ul>
       <li><a href="services.html" class="nav-link mobile-link">Services</a></li>
-      <li><a href="index.html#process" class="nav-link mobile-link">How It Works</a></li>
-      <li><a href="index.html#ai" class="nav-link mobile-link">AI Suite</a></li>
+      <li><a href="#process" class="nav-link mobile-link">How It Works</a></li>
+      <li><a href="#ai" class="nav-link mobile-link">AI Suite</a></li>
       <li><a href="pricing.html" class="nav-link mobile-link">Pricing</a></li>
-      <li><a href="index.html#faq" class="nav-link mobile-link">FAQ</a></li>
+      <li><a href="#faq" class="nav-link mobile-link">FAQ</a></li>
       <li><a href="contact.html" class="nav-link mobile-link mobile-cta">Get Started →</a></li>
     </ul>
   </div>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
+  <!-- ═══ HERO ═══ -->
+  <section class="lp-hero" id="hero">
     <div class="stars" id="stars"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          AI-Powered · Built for Growth · Based in Kenya
-        </div>
-        <h1 class="hero-title">
-          We Make Brands<br />
-          <span class="gradient-text">Impossible to Scroll Past.</span>
-        </h1>
-        <p class="hero-sub">
-          Strategy. Video. AI. All in one team — so your content actually converts.
-        </p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn-primary nav-link">
-            <span>Start a Project</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="services.html" class="btn-ghost nav-link">See What We Do</a>
-        </div>
-        <div class="hero-trust">
-          <span class="trust-label">Active across</span>
-          <div class="trust-platforms">
-            <span>Instagram</span><span class="sep">·</span>
-            <span>TikTok</span><span class="sep">·</span>
-            <span>LinkedIn</span><span class="sep">·</span>
-            <span>YouTube</span><span class="sep">·</span>
-            <span>X (Twitter)</span>
+
+    <!-- Giant background planet -->
+    <div class="lp-planet-wrap">
+      <div class="lp-planet"></div>
+      <div class="lp-ring lp-ring-1"></div>
+      <div class="lp-ring lp-ring-2"></div>
+      <div class="lp-ring lp-ring-3"></div>
+    </div>
+
+    <!-- Floating social cards -->
+    <div class="lp-float-cards">
+      <div class="lp-card lp-card-1">
+        <div class="lp-card-inner">
+          <div class="lp-card-header">
+            <div class="lp-card-avatar" style="background:linear-gradient(135deg,#a855f7,#ec4899)"></div>
+            <div><div class="lp-card-name">@brandname</div><div class="lp-card-type">Instagram Reel</div></div>
+            <div class="lp-card-platform ig">▶</div>
+          </div>
+          <div class="lp-card-visual reel-visual"></div>
+          <div class="lp-card-stats">
+            <span>❤️ 4.2K</span><span>💬 312</span><span>📤 891</span>
           </div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="dashboard">
-          <div class="dash-header">
-            <div class="dash-dots"><span></span><span></span><span></span></div>
-            <span class="dash-title">Orbit X · Analytics</span>
+      <div class="lp-card lp-card-2">
+        <div class="lp-card-inner">
+          <div class="lp-card-header">
+            <div class="lp-card-avatar" style="background:linear-gradient(135deg,#06b6d4,#3b82f6)"></div>
+            <div><div class="lp-card-name">@yourbrand</div><div class="lp-card-type">TikTok</div></div>
+            <div class="lp-card-platform tk">♪</div>
           </div>
-          <div class="dash-body">
-            <div class="dash-metric">
-              <span class="metric-label">Reach This Month</span>
-              <span class="metric-value" data-count="284000">0</span>
-              <span class="metric-up">↑ 142%</span>
-            </div>
-            <div class="dash-metric">
-              <span class="metric-label">Engagement Rate</span>
-              <span class="metric-value" data-count="8.4" data-suffix="%">0%</span>
-              <span class="metric-up">↑ 3.2%</span>
-            </div>
-            <div class="dash-chart">
-              <div class="chart-bars">
-                <div class="bar" style="--h:40%"><span>W1</span></div>
-                <div class="bar" style="--h:60%"><span>W2</span></div>
-                <div class="bar" style="--h:45%"><span>W3</span></div>
-                <div class="bar active" style="--h:88%"><span>W4</span></div>
-              </div>
-              <span class="chart-label">Weekly Content Performance</span>
-            </div>
-            <div class="dash-recent">
-              <span class="recent-label">Recent Posts</span>
-              <div class="recent-posts">
-                <div class="post-item">
-                  <div class="post-thumb reel"></div>
-                  <div class="post-info"><span>Product Reel</span><span class="post-stats">48.2K views · 6.1% eng.</span></div>
-                  <span class="post-badge">Reel</span>
-                </div>
-                <div class="post-item">
-                  <div class="post-thumb carousel"></div>
-                  <div class="post-info"><span>Brand Story</span><span class="post-stats">12.8K reach · 9.4% eng.</span></div>
-                  <span class="post-badge">Carousel</span>
-                </div>
-                <div class="post-item">
-                  <div class="post-thumb tiktok"></div>
-                  <div class="post-info"><span>TikTok Hook</span><span class="post-stats">91.4K views · 11.2% eng.</span></div>
-                  <span class="post-badge viral">Viral</span>
-                </div>
-              </div>
-            </div>
+          <div class="lp-card-visual tiktok-visual"></div>
+          <div class="lp-card-stats viral-stats">
+            <span>🔥 91.4K views</span><span>↑ Viral</span>
           </div>
         </div>
+      </div>
+      <div class="lp-card lp-card-3">
+        <div class="lp-card-inner">
+          <div class="lp-metric-card">
+            <div class="lp-metric-val">+142%</div>
+            <div class="lp-metric-label">Reach this month</div>
+            <div class="lp-metric-bar"><div class="lp-metric-fill"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="lp-card lp-card-4">
+        <div class="lp-card-inner">
+          <div class="lp-card-header">
+            <div class="lp-card-avatar" style="background:linear-gradient(135deg,#f97316,#ef4444)"></div>
+            <div><div class="lp-card-name">@clientco</div><div class="lp-card-type">LinkedIn Post</div></div>
+          </div>
+          <div class="lp-card-text">"We went from invisible to 11K followers in 60 days."</div>
+          <div class="lp-card-stats"><span>👍 2.1K</span><span>🔁 487 reposts</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero copy -->
+    <div class="lp-hero-copy">
+      <div class="lp-hero-tag">
+        <span class="badge-dot"></span>
+        AI-Powered · Strategy · Video · Growth
+      </div>
+      <h1 class="lp-hero-h1">
+        <span class="lp-line">We Make Brands</span>
+        <span class="lp-line lp-line-grad">Impossible to</span>
+        <span class="lp-line lp-line-grad">Scroll Past.</span>
+      </h1>
+      <p class="lp-hero-sub">Strategy. Video. AI. All in one team — so your content actually converts.</p>
+      <div class="lp-hero-actions">
+        <a href="contact.html" class="btn-primary nav-link">
+          Start a Project
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="services.html" class="btn-ghost nav-link">See What We Do</a>
+      </div>
+      <div class="lp-platforms">
+        <span>Active on</span>
+        <span class="plat">Instagram</span>
+        <span class="pdot">·</span>
+        <span class="plat">TikTok</span>
+        <span class="pdot">·</span>
+        <span class="plat">LinkedIn</span>
+        <span class="pdot">·</span>
+        <span class="plat">YouTube</span>
+        <span class="pdot">·</span>
+        <span class="plat">X</span>
       </div>
     </div>
   </section>
@@ -165,81 +176,117 @@
     </div>
   </div>
 
-  <!-- STATS -->
-  <section class="stats-section">
+  <!-- ═══ EDGE STATEMENT ═══ -->
+  <section class="lp-edge">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal"><span class="stat-num gradient-text">4x</span><span class="stat-label">Average reach increase in 90 days</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat-item reveal"><span class="stat-num gradient-text">48h</span><span class="stat-label">From brief to first content batch</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat-item reveal"><span class="stat-num gradient-text">All-in-One</span><span class="stat-label">Strategy + editing + management</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat-item reveal"><span class="stat-num gradient-text">AI-First</span><span class="stat-label">Workflow built for speed & scale</span></div>
+      <div class="lp-edge-inner reveal">
+        <div class="lp-edge-left">
+          <span class="lp-edge-tag">The Orbit X Edge</span>
+          <p class="lp-edge-quote">
+            Every video editor<br/>is a marketer.<br/>
+            <strong>Not every marketer<br/>does video editing.</strong>
+          </p>
+        </div>
+        <div class="lp-edge-right">
+          <p>Most agencies split strategy and production across two different people. We built a workflow where both happen in one place — with AI accelerating every step.</p>
+          <p>The result: faster content, stronger creative, and a team that actually understands what makes people stop scrolling.</p>
+          <a href="services.html" class="lp-edge-link nav-link">What we do exactly →</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- STATEMENT -->
-  <section class="statement-section">
+  <!-- ═══ SERVICES — CREATIVE LIST ═══ -->
+  <section class="lp-services" id="services">
     <div class="container">
-      <div class="statement-card reveal">
-        <div class="statement-tag">Our Edge</div>
-        <p class="statement">
-          Every video editor is a marketer.<br />
-          <strong>Not every marketer does video editing.</strong>
-        </p>
-        <p class="statement-sub">We do both — and we run AI across all of it.</p>
+      <div class="lp-services-header reveal">
+        <span class="section-tag">Services</span>
+        <h2 class="lp-services-title">One team.<br /><span class="gradient-text">Four superpowers.</span></h2>
+      </div>
+      <div class="lp-services-list">
+        <a href="services.html" class="lp-svc-row nav-link reveal">
+          <div class="lp-svc-num">01</div>
+          <div class="lp-svc-info">
+            <h3>Social Media Management</h3>
+            <p>We run your accounts daily — posting, engaging, and growing so you don't have to.</p>
+          </div>
+          <div class="lp-svc-tags">
+            <span>Instagram</span><span>TikTok</span><span>LinkedIn</span><span>X</span>
+          </div>
+          <div class="lp-svc-arrow">→</div>
+        </a>
+        <a href="services.html" class="lp-svc-row featured-row nav-link reveal">
+          <div class="lp-svc-num cyan">02</div>
+          <div class="lp-svc-info">
+            <h3>Video Editing & Reels <span class="lp-hot">Most Popular</span></h3>
+            <p>Scroll-stopping Reels and TikToks — cut to hook, retain, and convert from frame one.</p>
+          </div>
+          <div class="lp-svc-tags">
+            <span>Reels</span><span>TikTok</span><span>Shorts</span><span>Motion</span>
+          </div>
+          <div class="lp-svc-arrow cyan">→</div>
+        </a>
+        <a href="services.html" class="lp-svc-row nav-link reveal">
+          <div class="lp-svc-num">03</div>
+          <div class="lp-svc-info">
+            <h3>AI Content Creation</h3>
+            <p>Scripts, captions, graphics, and calendars — generated at speed without losing quality.</p>
+          </div>
+          <div class="lp-svc-tags">
+            <span>Scripts</span><span>Captions</span><span>Graphics</span><span>Calendar</span>
+          </div>
+          <div class="lp-svc-arrow">→</div>
+        </a>
+        <a href="services.html" class="lp-svc-row nav-link reveal">
+          <div class="lp-svc-num">04</div>
+          <div class="lp-svc-info">
+            <h3>Strategy & Consulting</h3>
+            <p>A full audit and 90-day growth roadmap built around your brand and audience.</p>
+          </div>
+          <div class="lp-svc-tags">
+            <span>Audit</span><span>Roadmap</span><span>Analysis</span><span>KPIs</span>
+          </div>
+          <div class="lp-svc-arrow">→</div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES PREVIEW -->
-  <section class="services-section" id="services">
+  <!-- ═══ RESULTS WALL ═══ -->
+  <section class="lp-results">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What We Do</span>
-        <h2>One Team.<br /><span class="gradient-text">Everything You Need.</span></h2>
-      </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-number">01</div>
-          <div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M8 8h32v32H8z" rx="4" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="20" r="4" stroke="currentColor" stroke-width="2"/><path d="M8 36l8-8 6 6 8-10 10 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <h3>Social Media Management</h3>
-          <p>We run your accounts daily — posting, engaging, and growing so you don't have to.</p>
-          <a href="services.html" class="service-link nav-link">Learn more →</a>
+      <div class="lp-results-grid">
+        <div class="lp-result-big reveal">
+          <span class="lp-result-num gradient-text" data-count="4" data-suffix="x">0x</span>
+          <span class="lp-result-label">Average reach increase in 90 days</span>
         </div>
-        <div class="service-card featured reveal">
-          <div class="featured-ribbon">Most Popular</div>
-          <div class="service-number" style="color:var(--cyan)">02</div>
-          <div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="4" stroke="currentColor" stroke-width="2"/><path d="M20 18l10 6-10 6V18z" fill="currentColor"/></svg></div>
-          <h3>Video Editing & Reels</h3>
-          <p>Scroll-stopping Reels and TikToks — cut to hook, retain, and convert from frame one.</p>
-          <a href="services.html" class="service-link nav-link">Learn more →</a>
-          <div class="service-glow"></div>
+        <div class="lp-result-big reveal">
+          <span class="lp-result-num gradient-text" data-count="48" data-suffix="h">0h</span>
+          <span class="lp-result-label">From brief to first content batch</span>
         </div>
-        <div class="service-card reveal">
-          <div class="service-number">03</div>
-          <div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 8C15.163 8 8 15.163 8 24s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8z" stroke="currentColor" stroke-width="2"/><path d="M16 28s2-5 8-5 8 5 8 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="19" cy="21" r="2" fill="currentColor"/><circle cx="29" cy="21" r="2" fill="currentColor"/></svg></div>
-          <h3>AI Content Creation</h3>
-          <p>Scripts, captions, graphics, and calendars — generated at speed without losing quality.</p>
-          <a href="services.html" class="service-link nav-link">Learn more →</a>
+        <div class="lp-result-stack">
+          <div class="lp-result-sm reveal">
+            <span class="lp-result-num-sm gradient-text">10x</span>
+            <span class="lp-result-label-sm">Faster content with AI</span>
+          </div>
+          <div class="lp-result-sm reveal">
+            <span class="lp-result-num-sm gradient-text">100%</span>
+            <span class="lp-result-label-sm">Human-reviewed before posting</span>
+          </div>
         </div>
-        <div class="service-card reveal">
-          <div class="service-number">04</div>
-          <div class="service-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M8 36l8-8 8 4 8-12 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="28" r="2.5" fill="currentColor"/><circle cx="24" cy="32" r="2.5" fill="currentColor"/><circle cx="32" cy="20" r="2.5" fill="currentColor"/></svg></div>
-          <h3>Strategy & Consulting</h3>
-          <p>A full audit and 90-day growth roadmap built around your brand and audience.</p>
-          <a href="services.html" class="service-link nav-link">Learn more →</a>
+        <div class="lp-result-testimonial reveal">
+          <div class="stars-rating">★★★★★</div>
+          <p>"We went from 2K to 11K followers in 60 days. First time we got DMs from organic reach."</p>
+          <div class="lp-result-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#0ea5e9,#2563eb)">AK</div>
+            <div><strong>Amara K.</strong><span>CEO, Amara Beauty</span></div>
+          </div>
         </div>
-      </div>
-      <div style="text-align:center; margin-top: 40px;">
-        <a href="services.html" class="btn-ghost nav-link">View All Services →</a>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
+  <!-- ═══ HOW IT WORKS ═══ -->
   <section class="process-section" id="process">
     <div class="container">
       <div class="section-header reveal">
@@ -270,7 +317,7 @@
     </div>
   </section>
 
-  <!-- WHY -->
+  <!-- ═══ WHY ═══ -->
   <section class="why-section" id="why">
     <div class="container">
       <div class="why-inner">
@@ -281,11 +328,11 @@
           <div class="why-points">
             <div class="why-point">
               <div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <div><h4>Marketer + Editor in One</h4><p>No disconnected handoffs. We understand both strategy and production.</p></div>
+              <div><h4>Marketer + Editor in One</h4><p>No disconnected handoffs. Strategy and production in the same brain.</p></div>
             </div>
             <div class="why-point">
               <div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-              <div><h4>AI as Infrastructure</h4><p>Half the production time, same quality — meaning you get more for less.</p></div>
+              <div><h4>AI as Infrastructure</h4><p>Half the production time, same quality — you get more for less.</p></div>
             </div>
             <div class="why-point">
               <div class="why-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -324,7 +371,7 @@
     </div>
   </section>
 
-  <!-- AI SUITE -->
+  <!-- ═══ AI SUITE ═══ -->
   <section class="ai-section" id="ai">
     <div class="container">
       <div class="section-header reveal">
@@ -343,7 +390,7 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- ═══ TESTIMONIALS ═══ -->
   <section class="testimonials-section" id="testimonials">
     <div class="container">
       <div class="section-header reveal">
@@ -379,7 +426,7 @@
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- ═══ FAQ ═══ -->
   <section class="faq-section" id="faq">
     <div class="container">
       <div class="faq-inner">
@@ -389,41 +436,36 @@
           <p>Anything else? <a href="contact.html" class="nav-link" style="color:var(--cyan)">Send us a message.</a></p>
         </div>
         <div class="faq-right">
-          <div class="faq-item reveal">
-            <button class="faq-question">Do you work with businesses outside Kenya?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Yes. We work remotely with clients across East Africa and internationally. Location is never a barrier.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-question">How quickly can you start?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>After onboarding, your first content batch is ready within 48 hours. We move fast.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-question">Do I need to provide video footage?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>For video editing, yes — you provide raw clips and we handle editing, captions, music, and motion. For AI content, no footage needed.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-question">Can I cancel anytime?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>No lock-in. Pause or cancel at the end of any billing month. We earn your business every month.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-question">Do you guarantee results?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>We guarantee consistent, high-quality content on schedule and a strategy built on real data. We can't guarantee follower numbers — no one honestly can.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-question">How is AI used in your workflow?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>AI handles scripts, captions, content ideas, and graphic foundations. We review and refine everything before it goes out — speed without sacrificing quality.</p></div>
-          </div>
+          <div class="faq-item reveal"><button class="faq-question">Do you work with businesses outside Kenya?<span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. We work remotely with clients across East Africa and internationally. Location is never a barrier.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-question">How quickly can you start?<span class="faq-icon">+</span></button><div class="faq-answer"><p>After onboarding, your first content batch is ready within 48 hours. We move fast.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-question">Do I need to provide video footage?<span class="faq-icon">+</span></button><div class="faq-answer"><p>For video editing, yes — you provide raw clips and we handle editing, captions, music, and motion. For AI content, no footage needed.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-question">Can I cancel anytime?<span class="faq-icon">+</span></button><div class="faq-answer"><p>No lock-in. Pause or cancel at the end of any billing month. We earn your business every month.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-question">Do you guarantee results?<span class="faq-icon">+</span></button><div class="faq-answer"><p>We guarantee consistent, high-quality content on schedule and a strategy built on real data. We can't guarantee follower numbers — no one honestly can.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-question">How is AI used in your workflow?<span class="faq-icon">+</span></button><div class="faq-answer"><p>AI handles scripts, captions, content ideas, and graphic foundations. We review and refine everything before it goes out — speed without sacrificing quality.</p></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA BANNER -->
-  <section class="cta-banner">
+  <!-- ═══ FINAL CTA ═══ -->
+  <section class="lp-final-cta">
+    <div class="stars" id="stars2"></div>
+    <div class="lp-planet-wrap-sm">
+      <div class="lp-planet-sm"></div>
+      <div class="lp-ring-sm"></div>
+    </div>
     <div class="container">
-      <div class="cta-inner reveal">
-        <h2>Stop posting into the void.<br /><span class="gradient-text">Start building an audience.</span></h2>
-        <a href="contact.html" class="btn-primary nav-link">Work With Us</a>
+      <div class="lp-final-inner reveal">
+        <div class="lp-final-tag">Ready?</div>
+        <h2 class="lp-final-h2">
+          Stop posting<br />into the void.<br />
+          <span class="gradient-text">Start building<br />an audience.</span>
+        </h2>
+        <div class="lp-final-actions">
+          <a href="contact.html" class="btn-primary nav-link">Work With Us →</a>
+          <a href="pricing.html" class="btn-ghost nav-link">See Pricing</a>
+        </div>
+        <p class="lp-final-note">No contracts. Cancel anytime. First content in 48h.</p>
       </div>
     </div>
   </section>
@@ -455,14 +497,14 @@
           </div>
           <div class="footer-col">
             <h5>Company</h5>
-            <a href="index.html#why" class="nav-link">Why Orbit X</a>
-            <a href="index.html#process" class="nav-link">How It Works</a>
-            <a href="index.html#ai" class="nav-link">AI Suite</a>
+            <a href="#why" class="nav-link">Why Orbit X</a>
+            <a href="#process" class="nav-link">How It Works</a>
+            <a href="#ai" class="nav-link">AI Suite</a>
             <a href="pricing.html" class="nav-link">Pricing</a>
           </div>
           <div class="footer-col">
             <h5>Support</h5>
-            <a href="index.html#faq" class="nav-link">FAQ</a>
+            <a href="#faq" class="nav-link">FAQ</a>
             <a href="contact.html" class="nav-link">Contact Us</a>
             <a href="mailto:hello@orbitxsystems.com">Email Us</a>
           </div>
