@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Orbit X Systems</title>
+  <meta name="description" content="Transparent flat-rate pricing for social media management, video editing, and AI content. No contracts, cancel anytime." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo nav-link">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="10" fill="url(#p1)"/><ellipse cx="18" cy="18" rx="17" ry="6" stroke="url(#r1)" stroke-width="2.5" fill="none" transform="rotate(-20 18 18)"/><defs><radialGradient id="p1" cx="35%" cy="30%"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0a1628"/></radialGradient><linearGradient id="r1" x1="0" y1="0" x2="36" y2="0"><stop offset="0%" stop-color="#f97316"/><stop offset="100%" stop-color="#ef4444"/></linearGradient></defs></svg>
+        <span class="logo-orbit">Orbit</span><span class="logo-x">X</span><span class="logo-systems">SYSTEMS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="index.html#process" class="nav-link">How It Works</a></li>
+        <li><a href="index.html#ai" class="nav-link">AI Suite</a></li>
+        <li><a href="pricing.html" class="nav-link active-page">Pricing</a></li>
+        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Get Started</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="services.html" class="nav-link mobile-link">Services</a></li>
+      <li><a href="index.html#process" class="nav-link mobile-link">How It Works</a></li>
+      <li><a href="index.html#ai" class="nav-link mobile-link">AI Suite</a></li>
+      <li><a href="pricing.html" class="nav-link mobile-link">Pricing</a></li>
+      <li><a href="index.html#faq" class="nav-link mobile-link">FAQ</a></li>
+      <li><a href="contact.html" class="nav-link mobile-link mobile-cta">Get Started →</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="stars" id="stars"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="section-tag">Pricing</span>
+        <h1 class="page-hero-title">Transparent Plans.<br /><span class="gradient-text">No Surprises.</span></h1>
+        <p class="page-hero-sub">Flat monthly pricing. No long-term contracts. Cancel anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" style="padding-top:60px">
+    <div class="container">
+      <div class="pricing-toggle reveal">
+        <span class="toggle-label active" id="toggleMonthly">Monthly</span>
+        <div class="toggle-switch" id="billingToggle"><div class="toggle-thumb"></div></div>
+        <span class="toggle-label" id="toggleAnnual">Annual <span class="toggle-save">Save 20%</span></span>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="plan-header">
+            <div class="plan-name">Starter</div>
+            <div class="plan-price"><span class="currency">$</span><span class="price-num" data-monthly="99" data-annual="79">99</span><span class="period">/mo</span></div>
+          </div>
+          <p class="plan-desc">For solo creators and small brands ready to build a consistent, professional presence.</p>
+          <ul class="plan-features">
+            <li class="yes">3 platforms managed</li>
+            <li class="yes">12 posts per month</li>
+            <li class="yes">AI captions & hashtags</li>
+            <li class="yes">4 short-form videos/month</li>
+            <li class="yes">Monthly performance report</li>
+            <li class="no">Strategy consulting</li>
+            <li class="no">Priority turnaround</li>
+          </ul>
+          <a href="contact.html" class="btn-plan nav-link">Get Started</a>
+        </div>
+        <div class="pricing-card popular reveal">
+          <div class="popular-label">Most Popular</div>
+          <div class="plan-header">
+            <div class="plan-name">Growth</div>
+            <div class="plan-price"><span class="currency">$</span><span class="price-num" data-monthly="249" data-annual="199">249</span><span class="period">/mo</span></div>
+          </div>
+          <p class="plan-desc">For growing businesses ready to dominate their niche with consistent, high-quality content.</p>
+          <ul class="plan-features">
+            <li class="yes">5 platforms managed</li>
+            <li class="yes">20 posts per month</li>
+            <li class="yes">Full AI content calendar</li>
+            <li class="yes">12 short-form videos/month</li>
+            <li class="yes">Monthly strategy review</li>
+            <li class="yes">Competitor analysis</li>
+            <li class="no">Dedicated account manager</li>
+          </ul>
+          <a href="contact.html" class="btn-plan popular-btn nav-link">Get Started</a>
+        </div>
+        <div class="pricing-card reveal">
+          <div class="plan-header">
+            <div class="plan-name">Pro</div>
+            <div class="plan-price"><span class="currency">$</span><span class="price-num" data-monthly="499" data-annual="399">499</span><span class="period">/mo</span></div>
+          </div>
+          <p class="plan-desc">For brands that want a full social media department — without hiring one.</p>
+          <ul class="plan-features">
+            <li class="yes">Unlimited platforms</li>
+            <li class="yes">Unlimited posts</li>
+            <li class="yes">Full AI content suite</li>
+            <li class="yes">30+ videos per month</li>
+            <li class="yes">Weekly strategy calls</li>
+            <li class="yes">Full brand consulting</li>
+            <li class="yes">Dedicated account manager</li>
+          </ul>
+          <a href="contact.html" class="btn-plan nav-link">Get Started</a>
+        </div>
+      </div>
+      <div class="pricing-footer reveal">
+        <p>Not sure which plan fits? <a href="contact.html" class="nav-link" style="color:var(--cyan)">Send us a message</a> — we'll recommend the right one.</p>
+        <p>Custom enterprise packages available for larger teams and multi-brand portfolios.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARE TABLE -->
+  <section style="padding: 80px 0 100px">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Compare</span>
+        <h2>What's Included<br /><span class="gradient-text">in Each Plan</span></h2>
+      </div>
+      <div class="compare-table reveal">
+        <div class="compare-header">
+          <div class="compare-feature"></div>
+          <div class="compare-plan">Starter</div>
+          <div class="compare-plan highlight">Growth</div>
+          <div class="compare-plan">Pro</div>
+        </div>
+        <div class="compare-row"><div class="compare-feature">Platforms managed</div><div class="compare-val">3</div><div class="compare-val highlight">5</div><div class="compare-val">Unlimited</div></div>
+        <div class="compare-row"><div class="compare-feature">Posts per month</div><div class="compare-val">12</div><div class="compare-val highlight">20</div><div class="compare-val">Unlimited</div></div>
+        <div class="compare-row"><div class="compare-feature">Short-form videos</div><div class="compare-val">4</div><div class="compare-val highlight">12</div><div class="compare-val">30+</div></div>
+        <div class="compare-row"><div class="compare-feature">AI captions & hashtags</div><div class="compare-val check-icon">✓</div><div class="compare-val highlight check-icon">✓</div><div class="compare-val check-icon">✓</div></div>
+        <div class="compare-row"><div class="compare-feature">Content calendar</div><div class="compare-val cross-icon">✗</div><div class="compare-val highlight check-icon">✓</div><div class="compare-val check-icon">✓</div></div>
+        <div class="compare-row"><div class="compare-feature">Monthly strategy review</div><div class="compare-val cross-icon">✗</div><div class="compare-val highlight check-icon">✓</div><div class="compare-val check-icon">✓</div></div>
+        <div class="compare-row"><div class="compare-feature">Competitor analysis</div><div class="compare-val cross-icon">✗</div><div class="compare-val highlight check-icon">✓</div><div class="compare-val check-icon">✓</div></div>
+        <div class="compare-row"><div class="compare-feature">Weekly strategy calls</div><div class="compare-val cross-icon">✗</div><div class="compare-val highlight cross-icon">✗</div><div class="compare-val check-icon">✓</div></div>
+        <div class="compare-row"><div class="compare-feature">Dedicated account manager</div><div class="compare-val cross-icon">✗</div><div class="compare-val highlight cross-icon">✗</div><div class="compare-val check-icon">✓</div></div>
+        <div class="compare-row"><div class="compare-feature">Full brand consulting</div><div class="compare-val cross-icon">✗</div><div class="compare-val highlight cross-icon">✗</div><div class="compare-val check-icon">✓</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2>Ready to get started?<br /><span class="gradient-text">Let's build your presence.</span></h2>
+        <a href="contact.html" class="btn-primary nav-link">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo nav-link" style="margin-bottom:12px;display:inline-flex;"><svg class="logo-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="10" fill="url(#p4)"/><ellipse cx="18" cy="18" rx="17" ry="6" stroke="url(#r4)" stroke-width="2.5" fill="none" transform="rotate(-20 18 18)"/><defs><radialGradient id="p4" cx="35%" cy="30%"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0a1628"/></radialGradient><linearGradient id="r4" x1="0" y1="0" x2="36" y2="0"><stop offset="0%" stop-color="#f97316"/><stop offset="100%" stop-color="#ef4444"/></linearGradient></defs></svg><span class="logo-orbit">Orbit</span><span class="logo-x">X</span><span class="logo-systems" style="color:var(--cyan)">SYSTEMS</span></a>
+          <p>Smarter Systems, Seamless Solutions.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="2"/><path d="M7 10v7M7 7v.5M12 17v-4a2 2 0 0 1 4 0v4M12 10v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+            <a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h5>Services</h5><a href="services.html" class="nav-link">Social Media Management</a><a href="services.html" class="nav-link">Video Editing & Reels</a><a href="services.html" class="nav-link">AI Content Creation</a><a href="services.html" class="nav-link">Strategy & Consulting</a></div>
+          <div class="footer-col"><h5>Company</h5><a href="index.html#why" class="nav-link">Why Orbit X</a><a href="index.html#process" class="nav-link">How It Works</a><a href="index.html#ai" class="nav-link">AI Suite</a><a href="pricing.html" class="nav-link">Pricing</a></div>
+          <div class="footer-col"><h5>Support</h5><a href="index.html#faq" class="nav-link">FAQ</a><a href="contact.html" class="nav-link">Contact Us</a><a href="mailto:hello@orbitxsystems.com">Email Us</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Orbit X Systems. All rights reserved.</p><p class="footer-tagline">Smarter Systems, Seamless Solutions.</p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/254700000000?text=Hi%20Orbit%20X%2C%20I%27m%20interested%20in%20your%20services." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.555 4.122 1.528 5.855L.057 23.5a.5.5 0 0 0 .623.622l5.701-1.496A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.367l-.36-.214-3.72.976.993-3.628-.234-.373A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+  <script src="script.js"></script>
+</body>
+</html>

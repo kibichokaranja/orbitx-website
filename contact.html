@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Orbit X Systems</title>
+  <meta name="description" content="Get in touch with Orbit X Systems. We respond within 24 hours." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo nav-link">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="10" fill="url(#p1)"/><ellipse cx="18" cy="18" rx="17" ry="6" stroke="url(#r1)" stroke-width="2.5" fill="none" transform="rotate(-20 18 18)"/><defs><radialGradient id="p1" cx="35%" cy="30%"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0a1628"/></radialGradient><linearGradient id="r1" x1="0" y1="0" x2="36" y2="0"><stop offset="0%" stop-color="#f97316"/><stop offset="100%" stop-color="#ef4444"/></linearGradient></defs></svg>
+        <span class="logo-orbit">Orbit</span><span class="logo-x">X</span><span class="logo-systems">SYSTEMS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="index.html#process" class="nav-link">How It Works</a></li>
+        <li><a href="index.html#ai" class="nav-link">AI Suite</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta active-page">Get Started</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="services.html" class="nav-link mobile-link">Services</a></li>
+      <li><a href="index.html#process" class="nav-link mobile-link">How It Works</a></li>
+      <li><a href="index.html#ai" class="nav-link mobile-link">AI Suite</a></li>
+      <li><a href="pricing.html" class="nav-link mobile-link">Pricing</a></li>
+      <li><a href="index.html#faq" class="nav-link mobile-link">FAQ</a></li>
+      <li><a href="contact.html" class="nav-link mobile-link mobile-cta">Get Started →</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="stars" id="stars"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="section-tag">Get in Touch</span>
+        <h1 class="page-hero-title">Ready to Put Your<br /><span class="gradient-text">Brand in Orbit?</span></h1>
+        <p class="page-hero-sub">Tell us about your goals. We'll respond within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT BODY -->
+  <section class="contact-section" style="border-top:none; padding-top: 60px;">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">✉</span>
+              <div><span class="contact-label">Email</span><span class="contact-value">hello@orbitxsystems.com</span></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⏱</span>
+              <div><span class="contact-label">Response Time</span><span class="contact-value">Within 24 hours</span></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🌍</span>
+              <div><span class="contact-label">Working Hours</span><span class="contact-value">Mon – Fri, 8am – 6pm EAT</span></div>
+            </div>
+          </div>
+
+          <div style="margin-top: 48px;">
+            <h3 style="font-family:var(--font-display);font-size:18px;color:var(--white);margin-bottom:20px;">Not ready to fill a form?</h3>
+            <a href="https://wa.me/254700000000?text=Hi%20Orbit%20X%2C%20I%27m%20interested%20in%20your%20services."
+               target="_blank" rel="noopener"
+               class="btn-primary"
+               style="background:#25d366;box-shadow:0 4px 20px rgba(37,211,102,0.25);display:inline-flex;gap:10px;align-items:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.555 4.122 1.528 5.855L.057 23.5a.5.5 0 0 0 .623.622l5.701-1.496A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.367l-.36-.214-3.72.976.993-3.628-.234-.373A9.818 9.818 0 1 1 12 21.818z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Kamau" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="business">Business / Brand Name</label>
+              <input type="text" id="business" name="business" placeholder="Your Company" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service You're Interested In</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option>Social Media Management</option>
+                <option>Video Editing & Reels</option>
+                <option>AI Content Creation</option>
+                <option>Strategy & Consulting</option>
+                <option>Full Package — All Services</option>
+                <option>Custom / Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Goals</label>
+              <textarea id="message" name="message" rows="4" placeholder="What are you trying to achieve? What's not working right now?" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess"><span>✓</span> Message received — we'll be in touch within 24 hours.</div>
+            <div class="form-error" id="formError">Something went wrong. Please email us at hello@orbitxsystems.com</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" style="margin-top:60px">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo nav-link" style="margin-bottom:12px;display:inline-flex;"><svg class="logo-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="10" fill="url(#p5)"/><ellipse cx="18" cy="18" rx="17" ry="6" stroke="url(#r5)" stroke-width="2.5" fill="none" transform="rotate(-20 18 18)"/><defs><radialGradient id="p5" cx="35%" cy="30%"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0a1628"/></radialGradient><linearGradient id="r5" x1="0" y1="0" x2="36" y2="0"><stop offset="0%" stop-color="#f97316"/><stop offset="100%" stop-color="#ef4444"/></linearGradient></defs></svg><span class="logo-orbit">Orbit</span><span class="logo-x">X</span><span class="logo-systems" style="color:var(--cyan)">SYSTEMS</span></a>
+          <p>Smarter Systems, Seamless Solutions.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="2"/><path d="M7 10v7M7 7v.5M12 17v-4a2 2 0 0 1 4 0v4M12 10v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+            <a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h5>Services</h5><a href="services.html" class="nav-link">Social Media Management</a><a href="services.html" class="nav-link">Video Editing & Reels</a><a href="services.html" class="nav-link">AI Content Creation</a><a href="services.html" class="nav-link">Strategy & Consulting</a></div>
+          <div class="footer-col"><h5>Company</h5><a href="index.html#why" class="nav-link">Why Orbit X</a><a href="index.html#process" class="nav-link">How It Works</a><a href="index.html#ai" class="nav-link">AI Suite</a><a href="pricing.html" class="nav-link">Pricing</a></div>
+          <div class="footer-col"><h5>Support</h5><a href="index.html#faq" class="nav-link">FAQ</a><a href="contact.html" class="nav-link">Contact Us</a><a href="mailto:hello@orbitxsystems.com">Email Us</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Orbit X Systems. All rights reserved.</p><p class="footer-tagline">Smarter Systems, Seamless Solutions.</p></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
