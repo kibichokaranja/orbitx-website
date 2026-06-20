@@ -582,11 +582,12 @@
   .lp-card-2, .lp-card-3, .lp-card-4 { display: none; }
   .lp-card-1 {
     position: fixed;
-    top: 90px;
-    right: 10px;
-    width: 155px;
+    top: 80px;
+    right: 8px;
+    width: 150px;
     --dur: 7s;
     animation: floatCard var(--dur) ease-in-out infinite;
+    z-index: 10;
   }
   .lp-card-1 .lp-card-name, .lp-card-1 .lp-card-type { font-size: 10px; }
   .lp-card-1 .lp-card-stats { font-size: 10px; }
@@ -631,5 +632,6 @@
   .lp-result-sm:first-child { border-bottom: none; border-right: 1px solid var(--border); }
   .lp-svc-row { grid-template-columns: 36px 1fr auto; }
 
-  .lp-card-1 { width: 140px; top: 5%; right: 1%; }
+  .lp-float-cards { display: none !important; }
+  .lp-card-1 { display: none !important; }
 }
