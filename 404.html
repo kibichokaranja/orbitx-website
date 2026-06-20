@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Orbit X Systems</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .notfound-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .notfound-planet {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #1a5fa8 0%, #0a1628 60%, #050b18 100%);
+      box-shadow: 0 0 80px rgba(0,200,255,0.15);
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .notfound-planet::after {
+      content: '';
+      position: absolute;
+      width: 240px; height: 240px;
+      border: 2px solid rgba(249,115,22,0.5);
+      border-radius: 50%;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%) rotateX(72deg);
+      box-shadow: 0 0 20px rgba(249,115,22,0.2);
+    }
+    .notfound-code {
+      font-family: var(--font-display);
+      font-size: clamp(80px, 20vw, 140px);
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--cyan), var(--orange));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+    }
+    .notfound-msg {
+      font-size: 20px;
+      color: var(--white);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .notfound-sub {
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      max-width: 360px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-transition" id="pageTransition"></div>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo nav-link">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="10" fill="url(#p1)"/><ellipse cx="18" cy="18" rx="17" ry="6" stroke="url(#r1)" stroke-width="2.5" fill="none" transform="rotate(-20 18 18)"/><defs><radialGradient id="p1" cx="35%" cy="30%"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0a1628"/></radialGradient><linearGradient id="r1" x1="0" y1="0" x2="36" y2="0"><stop offset="0%" stop-color="#f97316"/><stop offset="100%" stop-color="#ef4444"/></linearGradient></defs></svg>
+        <span class="logo-orbit">Orbit</span><span class="logo-x">X</span><span class="logo-systems">SYSTEMS</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="stars" id="stars"></div>
+  <div class="notfound-wrap">
+    <div class="notfound-planet"></div>
+    <div class="notfound-code">404</div>
+    <div class="notfound-msg">Lost in Space</div>
+    <p class="notfound-sub">This page drifted out of orbit. Let's get you back on track.</p>
+    <a href="index.html" class="btn-primary nav-link">← Back to Home</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
