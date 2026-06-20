@@ -131,30 +131,15 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 const form = document.getElementById('contactForm');
 if (form) {
   const submitBtn = document.getElementById('submitBtn');
-  const successMsg = document.getElementById('formSuccess');
-  const errorMsg = document.getElementById('formError');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  form.addEventListener('submit', () => {
     submitBtn.disabled = true;
     submitBtn.querySelector('.btn-text').textContent = 'Sending...';
-    successMsg.style.display = 'none';
-    errorMsg.style.display = 'none';
-    if (form.action.includes('YOUR_FORM_ID')) {
-      setTimeout(() => {
-        form.reset();
-        submitBtn.disabled = false;
-        submitBtn.querySelector('.btn-text').textContent = 'Send Message';
-        successMsg.style.display = 'block';
-      }, 1200);
-      return;
-    }
-    try {
-      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-      if (res.ok) { form.reset(); successMsg.style.display = 'block'; }
-      else errorMsg.style.display = 'block';
-    } catch { errorMsg.style.display = 'block'; }
-    finally { submitBtn.disabled = false; submitBtn.querySelector('.btn-text').textContent = 'Send Message'; }
   });
+  // Show success message if redirected back after submission
+  if (window.location.search.includes('sent=1')) {
+    const successMsg = document.getElementById('formSuccess');
+    if (successMsg) successMsg.style.display = 'block';
+  }
 }
 
 /* ===== BACK TO TOP ===== */
