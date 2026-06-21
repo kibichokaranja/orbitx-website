@@ -26,37 +26,40 @@
   width: 480px;
   height: 480px;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #1a5fa8 0%, #0a1628 60%, #050b18 100%);
+  background: radial-gradient(circle at 35% 30%, #38bdf8 0%, #1a5fa8 30%, #0a1628 65%, #050b18 100%);
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 120px rgba(0, 200, 255, 0.12), inset 0 0 80px rgba(0,0,0,0.5);
+  box-shadow: 0 0 140px rgba(56, 189, 248, 0.18), inset 0 0 80px rgba(0,0,0,0.5);
 }
+/* Diagonal ring matching the logo style */
 .lp-ring {
   position: absolute;
   border-radius: 50%;
-  border: 2px solid transparent;
   top: 50%; left: 50%;
-  transform: translate(-50%, -50%) rotateX(72deg);
 }
 .lp-ring-1 {
-  width: 540px; height: 540px;
-  border-color: rgba(249, 115, 22, 0.5);
-  box-shadow: 0 0 20px rgba(249,115,22,0.2);
+  width: 620px; height: 220px;
+  border: 3px solid transparent;
+  border-color: rgba(249, 115, 22, 0.7);
+  box-shadow: 0 0 24px rgba(249,115,22,0.3), inset 0 0 12px rgba(249,115,22,0.1);
+  transform: translate(-50%, -50%) rotate(-20deg);
   animation: ringPulse 4s ease-in-out infinite;
 }
 .lp-ring-2 {
-  width: 600px; height: 600px;
-  border-color: rgba(0, 200, 255, 0.2);
-  animation: ringPulse 4s ease-in-out infinite 1s;
+  width: 680px; height: 250px;
+  border: 1.5px solid rgba(249, 115, 22, 0.25);
+  transform: translate(-50%, -50%) rotate(-20deg);
+  animation: ringPulse 4s ease-in-out infinite 1.2s;
 }
 .lp-ring-3 {
-  width: 660px; height: 660px;
-  border-color: rgba(249, 115, 22, 0.08);
-  animation: ringPulse 4s ease-in-out infinite 2s;
+  width: 750px; height: 280px;
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  transform: translate(-50%, -50%) rotate(-20deg);
+  animation: ringPulse 4s ease-in-out infinite 2.4s;
 }
 @keyframes ringPulse {
-  0%, 100% { opacity: 0.8; }
-  50% { opacity: 0.4; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 /* Floating social cards */
@@ -573,9 +576,9 @@
     flex-shrink: 0;
   }
   .lp-planet { width: 200px; height: 200px; }
-  .lp-ring-1 { width: 235px; height: 235px; }
-  .lp-ring-2 { width: 265px; height: 265px; }
-  .lp-ring-3 { width: 295px; height: 295px; }
+  .lp-ring-1 { width: 260px; height: 90px; }
+  .lp-ring-2 { width: 290px; height: 105px; }
+  .lp-ring-3 { width: 320px; height: 120px; }
 
   /* Keep float-cards container, hide cards 2/3/4, show card-1 small */
   .lp-float-cards { position: fixed; inset: 0; pointer-events: none; }
@@ -608,9 +611,9 @@
 @media (max-width: 768px) {
   .lp-planet-wrap { width: 260px; height: 260px; }
   .lp-planet { width: 175px; height: 175px; }
-  .lp-ring-1 { width: 205px; height: 205px; }
-  .lp-ring-2 { width: 232px; height: 232px; }
-  .lp-ring-3 { width: 258px; height: 258px; }
+  .lp-ring-1 { width: 228px; height: 80px; }
+  .lp-ring-2 { width: 255px; height: 90px; }
+  .lp-ring-3 { width: 282px; height: 100px; }
   .lp-hero-h1 { font-size: clamp(32px, 8vw, 48px); }
 }
 
@@ -618,9 +621,9 @@
 @media (max-width: 600px) {
   .lp-planet-wrap { width: 220px; height: 220px; margin-bottom: 8px; }
   .lp-planet { width: 148px; height: 148px; }
-  .lp-ring-1 { width: 175px; height: 175px; }
-  .lp-ring-2 { width: 198px; height: 198px; }
-  .lp-ring-3 { width: 220px; height: 220px; }
+  .lp-ring-1 { width: 192px; height: 68px; }
+  .lp-ring-2 { width: 216px; height: 76px; }
+  .lp-ring-3 { width: 240px; height: 84px; }
   .lp-hero-h1 { font-size: clamp(28px, 8.5vw, 42px); }
   .lp-hero-actions { flex-direction: column; align-items: center; }
   .lp-hero-actions .btn-primary,
