@@ -345,8 +345,7 @@ button { font-family: inherit; }
   letter-spacing: 0.28em;
   color: var(--text-muted);
   margin-left: 2px;
-  align-self: flex-end;
-  margin-bottom: 2px;
+  align-self: center;
 }
 .nav-links {
   display: flex;
